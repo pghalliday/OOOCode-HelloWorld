@@ -1,0 +1,12 @@
+#include "OOOUnitTestDefines.h"
+#include "HelloWorld.h"
+
+OOOTest(HelloWorld)
+{
+	HelloWorld * pHelloWorld = OOOConstruct(HelloWorld);
+
+	/* Check stuff here */
+	OOOCheck(pHelloWorld != NULL);
+
+	OOODestroy(pHelloWorld);
+}

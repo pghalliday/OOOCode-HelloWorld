@@ -1,0 +1,21 @@
+#include "HelloWorld.h"
+
+#define OOOClass HelloWorld
+
+OOOPrivateData
+OOOPrivateDataEnd
+
+OOODestructor
+{
+}
+OOODestructorEnd
+
+OOOConstructor()
+{
+	OOOMapMethods
+		OOOMapMethod()
+	OOOMapMethodsEnd
+}
+OOOConstructorEnd
+
+#undef OOOClass

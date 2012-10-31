@@ -1,0 +1,15 @@
+#include "OOOUnitTestDefines.h"
+#include "OOOMockDebug.h"
+#include "HelloWorld.h"
+
+OOOTest(HelloWorld)
+{
+	OOOMockDebug * pOutput = OOOConstruct(OOOMockDebug);
+	OOOIDebug * iOutput = OOOCast(OOOIDebug, pOutput);
+	HelloWorld * pHelloWorld = OOOConstruct(HelloWorld, iOutput);
+
+	OOOCall(pHelloWorld, sayHello);
+	OOOCheck(OOOCall(pOutput, check, "Hello, World\n"));
+
+	OOODestroy(pHelloWorld);
+}
