@@ -27,7 +27,7 @@ IDE = ide
 VPATH := ../
 include $(OPENTV)/kit.mak
 RC_FLAGS :=$(RC_FLAGS) -vv -ec
-RC_INCLUDES2 +=  -I"../../HelloWorld" -I"../../HelloWorld/src" -I"../../HelloWorld/submodules/OOOCode/OOOCode/src/OOOCode"
+RC_INCLUDES2 +=  -I"../../HelloWorld" -I"../../HelloWorld/src" -I"../../HelloWorld/submodules/OOOCode/OOOCode/src" -I"../../HelloWorld/Test" -I"../../HelloWorld/submodules/OOOCode/OOOCode/Mocks"
 GCCO_FLAGS := $(GCCO_FLAGS) -O1  $(WARNINGS)
 -include ../makefile.defs
 

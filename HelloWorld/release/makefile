@@ -9,13 +9,13 @@ RM := "C:/OpenTV/SDKSuiteC2.2/SDK/bin/perl"  "C:/OpenTV/SDKSuiteC2.2/SDK/bin/cle
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir.mk
--include submodules/OOOCode/OOOCode/src/OOOCode/Utilities/subdir.mk
--include submodules/OOOCode/OOOCode/src/OOOCode/UnitTests/Reporter/subdir.mk
--include submodules/OOOCode/OOOCode/src/OOOCode/UnitTests/Reporter/Debug/subdir.mk
--include submodules/OOOCode/OOOCode/src/OOOCode/UnitTests/subdir.mk
--include submodules/OOOCode/OOOCode/src/OOOCode/subdir.mk
+-include submodules/OOOCode/OOOCode/src/UnitTests/Reporter/subdir.mk
+-include submodules/OOOCode/OOOCode/src/UnitTests/Reporter/Debug/subdir.mk
+-include submodules/OOOCode/OOOCode/src/UnitTests/subdir.mk
+-include submodules/OOOCode/OOOCode/Mocks/src/UnitTests/Reporter/Debug/subdir.mk
 -include src/subdir.mk
--include src/HelloWorld/subdir.mk
+-include Test/src/subdir.mk
+-include Test/subdir.mk
 -include objects.mk
 
 define deps_include
@@ -32,10 +32,10 @@ EXP_OPTIONS = -MMD  -MT$@ -MF$*.dx
 VPATH := ../
 include $(OPENTV)/kit.mak
 RC_FLAGS :=$(RC_FLAGS) -vv -ec
-COMPILER_INCLUDES2 +=  -I"../src" -I"../src/HelloWorld" -I"../submodules/OOOCode/OOOCode/src/OOOCode" -I"../submodules/OOOCode/OOOCode/src/OOOCode/Utilities" -I"../submodules/OOOCode/OOOCode/src/OOOCode/UnitTests" -I"../submodules/OOOCode/OOOCode/src/OOOCode/UnitTests/Reporter" -I"../submodules/OOOCode/OOOCode/src/OOOCode/UnitTests/Reporter/Debug"   -O1 $(WARNINGS)
+COMPILER_INCLUDES2 +=  -I"../src" -I"../submodules/OOOCode/OOOCode/src" -I"../submodules/OOOCode/OOOCode/src/Utilities" -I"../submodules/OOOCode/OOOCode/src/UnitTests" -I"../submodules/OOOCode/OOOCode/src/UnitTests/Reporter" -I"../submodules/OOOCode/OOOCode/src/UnitTests/Reporter/Debug" -I"../Test" -I"../Test/src" -I"../submodules/OOOCode/OOOCode/Mocks/src/UnitTests/Reporter/Debug"   -O1 $(WARNINGS)
 COMPILE+=${COMPILER_INCLUDES2}
 POSTLINK_OPTIONS=stacksize=1024
-RC_INCLUDES2 +=  -I"../src" -I"../src/HelloWorld" -I"../submodules/OOOCode/OOOCode/src/OOOCode" -I"../submodules/OOOCode/OOOCode/src/OOOCode/Utilities" -I"../submodules/OOOCode/OOOCode/src/OOOCode/UnitTests" -I"../submodules/OOOCode/OOOCode/src/OOOCode/UnitTests/Reporter" -I"../submodules/OOOCode/OOOCode/src/OOOCode/UnitTests/Reporter/Debug" 
+RC_INCLUDES2 +=  -I"../src" -I"../submodules/OOOCode/OOOCode/src" -I"../submodules/OOOCode/OOOCode/src/Utilities" -I"../submodules/OOOCode/OOOCode/src/UnitTests" -I"../submodules/OOOCode/OOOCode/src/UnitTests/Reporter" -I"../submodules/OOOCode/OOOCode/src/UnitTests/Reporter/Debug" -I"../Test" -I"../Test/src" -I"../submodules/OOOCode/OOOCode/Mocks/src/UnitTests/Reporter/Debug" 
 GCCO_FLAGS +=  -O1 $(WARNINGS)
 EXP_OPTIONS +=  -I..
 -include ../makefile.defs

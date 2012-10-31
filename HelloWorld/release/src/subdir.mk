@@ -4,10 +4,10 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/Main.c 
+../src/HelloWorld.c 
 
 OBJS += \
-./src/Main.o 
+./src/HelloWorld.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
