@@ -5,8 +5,7 @@
 OOOTest(HelloWorld)
 {
 	OOOMockDebug * pDebug = OOOConstruct(OOOMockDebug);
-	OOOIDebug * iDebug = OOOCast(OOOIDebug, pDebug);
-	HelloWorld * pHelloWorld = OOOConstruct(HelloWorld, iDebug);
+	HelloWorld * pHelloWorld = OOOConstruct(HelloWorld, OOOCast(OOOIDebug, pDebug));
 
 	OOOCall(pHelloWorld, sayHello);
 	OOOCheck(OOOCall(pDebug, check, "Hello, world!"));

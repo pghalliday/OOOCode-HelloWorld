@@ -22,7 +22,7 @@ OOOCall(pHelloWorld, sayHello);
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using ``./grunt.sh`` or ``.\grunt.bat``.
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Then the easiest way to work with the project in the OpenTV IDE...
 
 After you have built the projects at least once run the test application in the Virtual Set top box by...
 
-1. Choosing the **RequireFlow** project on the left
+1. Choosing the **HelloWorldFlow** project on the left
 1. Pressing the green **Run** button at the top
 1. In the resulting dialog choose **Local OpenTV Application** and press **OK**
 
