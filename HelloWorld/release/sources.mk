@@ -28,10 +28,8 @@ OOOS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-submodules/OOOCode/OOOCode/src/UnitTests/Reporter \
-submodules/OOOCode/OOOCode/src/UnitTests/Reporter/Debug \
-submodules/OOOCode/OOOCode/src/UnitTests \
-submodules/OOOCode/OOOCode/Mocks/src/UnitTests/Reporter/Debug \
+submodules/UnitTest/UnitTest/src \
+submodules/Log/Log/src \
 src \
 Test/src \
 Test \

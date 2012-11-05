@@ -3,7 +3,7 @@
 #define OOOClass HelloWorld
 
 OOOPrivateData
-	OOOIDebug * iDebug;
+	OOOILog * iLog;
 OOOPrivateDataEnd
 
 OOODestructor
@@ -13,17 +13,17 @@ OOODestructorEnd
 
 OOOMethod(void, sayHello)
 {
-	OOOICall(OOOF(iDebug), print, "Hello, world!");
+	OOOICall(OOOF(iLog), print, "Hello, world!");
 }
 OOOMethodEnd
 
-OOOConstructor(OOOIDebug * iDebug)
+OOOConstructor(OOOILog * iLog)
 {
 	OOOMapMethods
 		OOOMapMethod(sayHello)
 	OOOMapMethodsEnd
 
-	OOOF(iDebug) = iDebug;
+	OOOF(iLog) = iLog;
 }
 OOOConstructorEnd
 

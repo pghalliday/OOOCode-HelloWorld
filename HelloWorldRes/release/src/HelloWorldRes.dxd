@@ -1,2 +1,0 @@
-src/HelloWorldRes.dxd: src/HelloWorldRes.rcd \
-  C:/OpenTV/SDKSuiteC2.2/SDK/include/opentv.h

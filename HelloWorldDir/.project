@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>HelloWorld</project>
-		<project>HelloWorldRes</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

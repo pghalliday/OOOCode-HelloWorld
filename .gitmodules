@@ -1,3 +1,9 @@
 [submodule "HelloWorld/submodules/OOOCode"]
 	path = HelloWorld/submodules/OOOCode
 	url = https://github.com/pghalliday/OOOCode.git
+[submodule "HelloWorld/submodules/Log"]
+	path = HelloWorld/submodules/Log
+	url = https://github.com/pghalliday/OOOCode-Log.git
+[submodule "HelloWorld/submodules/UnitTest"]
+	path = HelloWorld/submodules/UnitTest
+	url = https://github.com/pghalliday/OOOCode-UnitTest.git

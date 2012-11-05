@@ -2,10 +2,10 @@
 #define HelloWorld_H
 
 #include "OOOCode.h"
-#include "OOOIDebug.h"
+#include "OOOILog.h"
 
 #define OOOClass HelloWorld
-OOODeclare(OOOIDebug * iDebug)
+OOODeclare(OOOILog * iLog)
 	OOOImplements
 	OOOImplementsEnd
 	OOOExports
